@@ -990,7 +990,7 @@
   </head>
   <body>
     <div class="topbar">
-      Ưu đãi ra mắt: <strong>giảm 59% còn 139.000đ</strong> · Miễn phí giao hàng
+      Ưu đãi ra mắt: <strong>giảm 59% còn 130.000đ</strong> · Miễn phí giao hàng
       toàn quốc
     </div>
     <nav class="nav" aria-label="Điều hướng chính">
@@ -1027,7 +1027,7 @@
               <li>Đa dạng màu sắc theo cá nhân</li>
             </ul>
             <div class="price-row" aria-label="Giá ưu đãi">
-              <span class="price">139.000đ</span>
+              <span class="price">130.000đ</span>
               <span class="old-price">359.000đ</span>
               <span class="sale-badge">-59%</span>
             </div>
@@ -1363,9 +1363,9 @@
             </div>
             <div class="total-box">
               <span>Tổng thanh toán</span
-              ><strong id="totalPrice">139.000đ</strong>
+              ><strong id="totalPrice">130.000đ</strong>
             </div>
-            <button class="btn btn-primary" type="submit">Đặt hàng</button>
+            <button class="btn btn-primary btn-submit" type="submit">Đặt hàng</button>
             <p class="secure">
               🔒 Thông tin chỉ dùng để xác nhận và giao đơn hàng.
             </p>
@@ -1497,13 +1497,13 @@
       aria-live="polite"
     ></div>
     <div class="mobile-cta">
-      <div class="price-mini">139.000đ</div>
+      <div class="price-mini">130.000đ</div>
       <a class="btn btn-primary" href="#dat-hang">Đặt hàng ngay</a>
     </div>
 
     <script>
       // ===== CẤU HÌNH SẢN PHẨM: sửa nhanh tại đây =====
-      const PRODUCT_PRICE = 139000;
+      const PRODUCT_PRICE = 130000;
       const formatVND = (value) =>
         new Intl.NumberFormat("vi-VN").format(value) + "đ";
 
@@ -1517,24 +1517,35 @@
       });
 
       // Demo xử lý form phía trình duyệt. Thay phần này bằng endpoint/Google Sheet/CRM của bạn.
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx0qFXqFXGRTBESjbSQ4tf9gF17nL4J5jN9-fwvmGc-_naErxkTlGkKF-rAowRG9SRY/exec';
       const orderForm = document.getElementById("orderForm");
       const formToast = document.getElementById("formToast");
-      orderForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        if (!orderForm.checkValidity()) {
-          orderForm.reportValidity();
-          return;
-        }
-        const data = Object.fromEntries(new FormData(orderForm).entries());
-        localStorage.setItem(
-          "resto_demo_order",
-          JSON.stringify({ ...data, createdAt: new Date().toISOString() }),
-        );
-        formToast.textContent =
-          "Đã ghi nhận bản demo trên thiết bị. Hãy kết nối form với hệ thống nhận đơn trước khi chạy thật.";
-        formToast.classList.add("show");
-        setTimeout(() => formToast.classList.remove("show"), 5200);
-      });
+      const btnSubmit = orderForm.querySelector('.btn-submit');
+      orderForm.addEventListener('submit', e => {
+        e.preventDefault();
+        
+        // Hiệu ứng đang gửi
+        btnSubmit.disabled = true;
+        btnSubmit.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ĐANG GỬI...';
+
+        // Gửi dữ liệu bằng Fetch API
+        fetch(scriptURL, { 
+            method: 'POST', 
+            body: new FormData(orderForm)
+        })
+        .then(response => {
+            alert('Chúc mừng! Đơn hàng của bạn đã được lưu thành công vào hệ thống. Chúng tôi sẽ sớm liên hệ!');
+            btnSubmit.disabled = false;
+            btnSubmit.innerHTML = '<i class="fas fa-shopping-cart"></i> XÁC NHẬN ĐẶT HÀNG';
+            orderForm.reset();
+        })
+        .catch(error => {
+            console.error('Lỗi!', error.message);
+            alert('Có lỗi xảy ra. Vui lòng thử lại hoặc gọi hotline!');
+            btnSubmit.disabled = false;
+            btnSubmit.innerHTML = '<i class="fas fa-shopping-cart"></i> XÁC NHẬN ĐẶT HÀNG';
+        });
+    });
 
       // ===== DỮ LIỆU THÔNG BÁO MUA HÀNG MÔ PHỎNG =====
       // Không trình bày đây là đơn thật. Khi có backend, thay mảng này bằng dữ liệu đơn đã xác minh.
