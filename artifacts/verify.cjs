@@ -39,10 +39,9 @@ const assert = require('node:assert/strict');
     }
   }
   await page.setViewportSize({ width: 390, height: 844 });
-  for (const color of ['green', 'blue', 'red']) {
-    const button = page.locator(`[data-gallery="${color}"]`);
-    await button.click();
-    assert.equal(await button.getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('.color-card').count(), 3);
+  for (const src of ['xanh-luc.png', 'xanh-lam.png', 'mau-do.png']) {
+    assert.equal(await page.locator(`.color-card img[src="${src}"]`).isVisible(), true);
   }
   await page.locator('#quantity').selectOption('3');
   assert.match(await page.locator('#orderTotal').innerText(), /1[.,]100[.,]000/);
