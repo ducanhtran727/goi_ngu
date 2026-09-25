@@ -1,0 +1,42 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "scroll": 320,
+      "brokenImages": []
+    },
+    {
+      "width": 360,
+      "scroll": 360,
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "brokenImages": []
+    },
+    {
+      "width": 430,
+      "scroll": 430,
+      "brokenImages": []
+    },
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": []
+    }
+  ],
+  "checks": [
+    "empty form",
+    "invalid phone",
+    "whitespace name",
+    "HTTP failure",
+    "business failure",
+    "unknown response",
+    "network failure",
+    "duplicate submission",
+    "confirmed success and reset"
+  ],
+  "mockedRequests": 5,
+  "pageErrors": []
+}
