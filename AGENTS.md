@@ -2,7 +2,7 @@
 
 ## Bối cảnh
 - Landing page tiếng Việt bán vòi sen LED hiển thị nhiệt độ, ưu tiên trải nghiệm mua hàng trên điện thoại.
-- Giá người dùng xác nhận: giá gốc 689.000đ/chiếc; mua 1 chiếc 396.000đ, mua 2 chiếc tổng 750.000đ, mua 3 chiếc tổng 1.100.000đ. Tính theo gói số lượng, không nhân giá một chiếc. Không suy ra thời hạn khuyến mại hoặc phí giao hàng.
+- Giá người dùng xác nhận: giá gốc 689.000đ/chiếc; mua 1 chiếc 296.000đ, mua 2 chiếc tổng 550.000đ, mua 3 chiếc tổng 750.000đ. Tính theo gói số lượng, không nhân giá một chiếc. Không suy ra thời hạn khuyến mại hoặc phí giao hàng.
 - Sản phẩm hiển thị nhiệt độ và đèn báo ba màu, hoạt động bằng sức nước. Không mô tả là tự điều chỉnh nhiệt độ, chống bỏng tuyệt đối hoặc tương thích mọi đầu nối.
 - Hiện trạng: `index.html` chứa HTML, CSS và JavaScript; ảnh nằm ở thư mục gốc. Kiểm tra lại cấu trúc trước mỗi nhiệm vụ.
 - Trao đổi với người dùng bằng tiếng Việt. Giữ stack hiện tại trừ khi yêu cầu công việc cần thay đổi.

@@ -3,7 +3,7 @@
 ## Phạm vi và căn cứ
 
 - Nội dung dựa trên mô tả của người dùng và ảnh sản phẩm tại thư mục gốc; đã xem `3-mau.png` và `khong-mau.png`.
-- Giá được người dùng xác nhận: giá gốc 689.000đ/chiếc; mua 1 chiếc 396.000đ (chênh lệch 293.000đ), mua 2 chiếc tổng 750.000đ, mua 3 chiếc tổng 1.100.000đ. Không tự thêm thời hạn hoặc số lượng khuyến mại.
+- Giá được người dùng xác nhận: giá gốc 689.000đ/chiếc; mua 1 chiếc 296.000đ (chênh lệch 393.000đ), mua 2 chiếc tổng 550.000đ, mua 3 chiếc tổng 750.000đ. Không tự thêm thời hạn hoặc số lượng khuyến mại.
 - Phân khúc đề xuất theo bối cảnh sử dụng: người mua muốn dễ quan sát nhiệt độ khi chuẩn bị nước tắm cho gia đình, có trẻ em hoặc người lớn tuổi. Đây là giả thuyết nội dung, chưa phải kết quả nghiên cứu thị trường.
 - Không thực hiện khảo sát đối thủ hoặc thị trường; không có tuyên bố về mức giá cạnh tranh, độ phổ biến hay hiệu quả chuyển đổi.
 - Chưa xác minh độc lập độ chính xác cảm biến, chuẩn ren, áp lực nước, vật liệu, chức năng lọc, bảo hành và giao nhận. Không quảng cáo các thông số hoặc chính sách này.
@@ -18,7 +18,7 @@ Mô tả: Vòi sen LED hiển thị nhiệt độ nước cùng đèn báo 3 mà
 
 Ba điểm chính: Hiển thị nhiệt độ · Đèn báo 3 màu · Chạy bằng sức nước
 
-Giá: **396.000đ** — giá gốc 689.000đ. Tiết kiệm 293.000đ.
+Giá: **296.000đ** — giá gốc 689.000đ. Tiết kiệm 393.000đ.
 
 CTA: **Đăng ký mua ngay**
 
@@ -83,9 +83,9 @@ Trường: Họ và tên · Số điện thoại · Địa chỉ nhận hàng ·
 
 Placeholder ghi chú: Ví dụ: Tôi cần tư vấn đầu nối dây sen.
 
-Giá mỗi sản phẩm: 396.000đ
+Giá mỗi sản phẩm: 296.000đ
 
-Tạm tính theo gói số lượng: 1 chiếc 396.000đ; 2 chiếc tổng 750.000đ; 3 chiếc tổng 1.100.000đ. Chưa gồm phí giao hàng. Không nhân số lượng với giá một chiếc.
+Tạm tính theo gói số lượng: 1 chiếc 296.000đ; 2 chiếc tổng 550.000đ; 3 chiếc tổng 750.000đ. Chưa gồm phí giao hàng. Không nhân số lượng với giá một chiếc.
 
 Nút: **Gửi đăng ký mua**
 
@@ -103,7 +103,7 @@ Ghi chú kỹ thuật: Không hiển thị “Đặt hàng thành công” chỉ
 
 ## Rà soát cuối
 
-- Giá hero và sticky CTA là 396.000đ cho một chiếc; form tính theo gói 1 chiếc 396.000đ, 2 chiếc 750.000đ, 3 chiếc 1.100.000đ.
+- Giá hero và sticky CTA là 296.000đ cho một chiếc; form tính theo gói 1 chiếc 296.000đ, 2 chiếc 550.000đ, 3 chiếc 750.000đ.
 - Xóa mọi nội dung gối ngủ, màu gối, RESTO nếu chưa có xác nhận thương hiệu mới, review và thông báo mua mô phỏng.
 - Không thêm công dụng lọc nước từ các hạt trong ảnh.
 - Không thêm đồng hồ đếm ngược, cam kết giao nhận hoặc tồn kho.

@@ -7,7 +7,7 @@
 - Desktop: hero hai cột, nội dung và ảnh cân bằng. Mobile: tiêu đề → ảnh sản phẩm → diễn giải, giá và CTA; thanh đăng ký cố định giúp truy cập form, ẩn khi form đi vào màn hình.
 - Hành trình: hiểu sản phẩm → nhu cầu gia đình → xem ba trạng thái đèn → cách vận hành/lắp đặt → FAQ → đăng ký mua.
 - Ba ảnh xanh lục, xanh lam, đỏ hiển thị sẵn dưới nhãn tương ứng, xếp dọc trên mobile và ba cột trên desktop; đây là minh họa trạng thái đèn, không phải biến thể để đặt mua.
-- Giá gói: 1 chiếc 396.000đ, 2 chiếc 750.000đ, 3 chiếc 1.100.000đ. Tổng trong form chưa gồm phí giao hàng.
+- Giá gói: 1 chiếc 296.000đ, 2 chiếc 550.000đ, 3 chiếc 750.000đ. Tổng trong form chưa gồm phí giao hàng.
 
 ## Nghiệm thu
 - Kiểm tra viewport 320, 360, 390, 430 và 1440 CSS px: không tràn ngang, ảnh tải được.

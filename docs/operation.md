@@ -2,7 +2,7 @@
 
 ## Nội dung và giá
 - Trang chính: `index.html`, HTML/CSS/JavaScript thuần; ảnh sản phẩm dùng các PNG tại thư mục gốc.
-- Giá được chủ dự án cung cấp: giá gốc 689.000đ/chiếc; 1 chiếc 396.000đ, 2 chiếc tổng 750.000đ, 3 chiếc tổng 1.100.000đ. Tổng tính theo gói số lượng. Phí giao hàng xác nhận khi liên hệ; không được tính là miễn phí.
+- Giá được chủ dự án cung cấp: giá gốc 689.000đ/chiếc; 1 chiếc 296.000đ, 2 chiếc tổng 550.000đ, 3 chiếc tổng 750.000đ. Tổng tính theo gói số lượng. Phí giao hàng xác nhận khi liên hệ; không được tính là miễn phí.
 - Đăng ký trên trang là yêu cầu mua để nhân viên xác nhận, không phải thanh toán trực tuyến.
 - Bản bàn giao nội dung: `docs/shower-content.md`. Bản thiết kế: `docs/shower-design.md`.
 
