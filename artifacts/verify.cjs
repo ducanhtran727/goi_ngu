@@ -32,13 +32,32 @@ const assert = require('node:assert/strict');
     const size = await page.evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth, brokenImages: [...document.images].filter(i => i.complete && !i.naturalWidth).map(i => i.src) }));
     assert.ok(size.scroll <= size.width, `Horizontal overflow at ${width}: ${size.scroll}`);
     assert.deepEqual(size.brokenImages, []);
+    assert.equal(await page.locator('#stickyBuy').isVisible(), false, 'No price bar before value content');
     viewports.push(size);
     if ([390, 1440].includes(width)) {
-      await page.screenshot({ path: `E:/goi_ngu/artifacts/page-${width}.png`, fullPage: true });
-      await page.screenshot({ path: `E:/goi_ngu/artifacts/hero-${width}.png` });
+      await page.screenshot({ path: `E:/goi_ngu/artifacts/value-first-page-${width}.png`, fullPage: true });
+      await page.screenshot({ path: `E:/goi_ngu/artifacts/value-first-hero-${width}.png` });
     }
   }
   await page.setViewportSize({ width: 390, height: 844 });
+  await page.evaluate(() => {
+    const bottom = document.querySelector('.hero').getBoundingClientRect().bottom + window.scrollY;
+    window.scrollTo({ top: bottom - 20, behavior: 'instant' });
+  });
+  await page.waitForTimeout(100);
+  assert.equal(await page.locator('#stickyBuy').isVisible(), false, 'Hidden until hero is passed');
+  await page.evaluate(() => {
+    const bottom = document.querySelector('.hero').getBoundingClientRect().bottom + window.scrollY;
+    window.scrollTo({ top: bottom + 2, behavior: 'instant' });
+  });
+  await page.waitForFunction(() => !document.getElementById('stickyBuy').hidden);
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+  await page.waitForFunction(() => document.getElementById('stickyBuy').hidden);
+  for (const [quantity, total] of [['1', '296.000'], ['2', '550.000'], ['3', '750.000']]) {
+    await page.locator(`[data-package="${quantity}"]`).click();
+    assert.equal(await page.locator('#quantity').inputValue(), quantity);
+    assert.ok((await page.locator('#orderTotal').innerText()).includes(total));
+  }
   assert.equal(await page.locator('.color-card').count(), 3);
   for (const src of ['xanh-luc.png', 'xanh-lam.png', 'mau-do.png']) {
     assert.equal(await page.locator(`.color-card img[src="${src}"]`).isVisible(), true);
@@ -51,6 +70,7 @@ const assert = require('node:assert/strict');
   const submit = page.locator('#orderForm button[type="submit"]');
   await submit.click();
   assert.equal(requests, 0, 'Empty form must not send');
+  assert.equal(await page.locator('#stickyBuy').isVisible(), false, 'Hidden during form entry');
   async function fill() {
     await page.locator('#fullname').fill('Người dùng kiểm thử');
     await page.locator('#phone').fill('0912345678');

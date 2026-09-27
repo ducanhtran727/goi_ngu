@@ -1,0 +1,3 @@
+Built-in ImageGen; source assets/demo-video-8.png; output assets/demo-video-8-clean.png. Original retained.
+
+Use case: precise-object-edit. Edit this exact video frame. Remove the overlaid bright green Vietnamese subtitle near the lower quarter ('vòi còn Hiển thị nhiệt độ') and the small pale overlaid text watermark below it. Reconstruct the underlying plain bathroom wall and water naturally. Preserve everything else: actual shower, green LED ring, actual display digits, fingers/hand, hoses, water streams, tap and heater geometry, physical labels printed on equipment, original lighting, framing, aspect ratio and video realism. Do not beautify, add features, change colors, invent people or add any text. Output only cleaned original image.

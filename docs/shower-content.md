@@ -6,7 +6,7 @@
 - Giá được người dùng xác nhận: giá gốc 689.000đ/chiếc; mua 1 chiếc 296.000đ (chênh lệch 393.000đ), mua 2 chiếc tổng 550.000đ, mua 3 chiếc tổng 750.000đ. Không tự thêm thời hạn hoặc số lượng khuyến mại.
 - Phân khúc đề xuất theo bối cảnh sử dụng: người mua muốn dễ quan sát nhiệt độ khi chuẩn bị nước tắm cho gia đình, có trẻ em hoặc người lớn tuổi. Đây là giả thuyết nội dung, chưa phải kết quả nghiên cứu thị trường.
 - Không thực hiện khảo sát đối thủ hoặc thị trường; không có tuyên bố về mức giá cạnh tranh, độ phổ biến hay hiệu quả chuyển đổi.
-- Chưa xác minh độc lập độ chính xác cảm biến, chuẩn ren, áp lực nước, vật liệu, chức năng lọc, bảo hành và giao nhận. Không quảng cáo các thông số hoặc chính sách này.
+- Chưa xác minh độc lập độ chính xác cảm biến, chuẩn ren, áp lực nước, vật liệu và chức năng lọc. Không quảng cáo các thông số chưa xác minh.
 
 ## 1. Hero
 
@@ -22,7 +22,7 @@ Giá: **296.000đ** — giá gốc 689.000đ. Tiết kiệm 393.000đ.
 
 CTA: **Đăng ký mua ngay**
 
-Microcopy: Phí giao hàng và thông tin đơn mua được xác nhận khi liên hệ.
+Microcopy: Miễn phí vận chuyển. Thông tin đơn mua được xác nhận khi liên hệ.
 
 ## 2. Vấn đề và lợi ích
 
@@ -71,13 +71,13 @@ Cần kiểm tra đầu nối của dây sen hiện tại. Hãy ghi nhu cầu t�
 Không. Đây là tín hiệu hỗ trợ quan sát; vẫn cần kiểm tra nước trước khi sử dụng, nhất là khi chuẩn bị nước tắm cho trẻ em hoặc người lớn tuổi.
 
 **Phí giao hàng và đơn mua được xác nhận thế nào?**
-Sau khi nhận đăng ký, bộ phận bán hàng liên hệ để xác nhận sản phẩm, phí giao hàng và thông tin đơn mua.
+Sau khi nhận đăng ký, bộ phận bán hàng liên hệ để xác nhận sản phẩm và thông tin đơn mua.
 
 ## 6. Form đăng ký mua
 
 Tiêu đề: **Đăng ký mua vòi sen LED**
 
-Mô tả: Để lại thông tin để được liên hệ xác nhận sản phẩm, phí giao hàng và đơn mua.
+Mô tả: Để lại thông tin để được liên hệ xác nhận sản phẩm và đơn mua.
 
 Trường: Họ và tên · Số điện thoại · Địa chỉ nhận hàng · Số lượng · Ghi chú (không bắt buộc)
 
@@ -85,7 +85,7 @@ Placeholder ghi chú: Ví dụ: Tôi cần tư vấn đầu nối dây sen.
 
 Giá mỗi sản phẩm: 296.000đ
 
-Tạm tính theo gói số lượng: 1 chiếc 296.000đ; 2 chiếc tổng 550.000đ; 3 chiếc tổng 750.000đ. Chưa gồm phí giao hàng. Không nhân số lượng với giá một chiếc.
+Tạm tính theo gói số lượng: 1 chiếc 296.000đ; 2 chiếc tổng 550.000đ; 3 chiếc tổng 750.000đ. Miễn phí vận chuyển. Không nhân số lượng với giá một chiếc.
 
 Nút: **Gửi đăng ký mua**
 
@@ -108,3 +108,11 @@ Ghi chú kỹ thuật: Không hiển thị “Đặt hàng thành công” chỉ
 - Không thêm công dụng lọc nước từ các hạt trong ảnh.
 - Không thêm đồng hồ đếm ngược, cam kết giao nhận hoặc tồn kho.
 - Chưa kiểm chứng sản phẩm thực tế và chưa đo chuyển đổi.
+
+## Chính sách được người dùng xác nhận ngày 26/09/2026
+
+- Bộ sản phẩm gồm vòi sen, tặng kèm dây nối.
+- Miễn phí vận chuyển.
+- Đổi trả miễn phí trong 14 ngày đầu nếu dùng không ưng.
+- Bảo hành lỗi nhà sản xuất 24 tháng.
+- Chưa có thông tin chiều dài dây nối hoặc điều kiện chi tiết khác; không tự bổ sung.
