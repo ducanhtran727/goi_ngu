@@ -251,6 +251,13 @@
         border: 1px solid var(--line);
         border-radius: 20px;
       }
+      .demo-comment h4 {
+        margin: 0;
+      }
+      .demo-comment .time-review {
+        font-size: 14px;
+        color: gray;
+      }
       .demo-label {
         display: block;
         color: #6d4d16;
@@ -276,6 +283,13 @@
       @media (max-width: 700px) {
         .demo-comments {
           grid-template-columns: 1fr;
+        }
+        .fb-avatar {
+          width: 40px !important;
+          height: 40px !important;
+          border-radius: 50% !important;
+          object-fit: cover !important;
+          flex-shrink: 0 !important;
         }
       }
       .gift-card img {
@@ -858,12 +872,17 @@
     <a class="skip-link" href="#noi-dung">Đến nội dung chính</a>
     <header class="header container">
       <a class="brand" href="#">VÒI SEN LED</a
-      ><a style="font-size: medium; font-weight: 600;"  href="#dang-ky">Đặt mua ngay ↗</a>
+      ><a style="font-size: medium; font-weight: 600" href="#dang-ky"
+        >Đặt mua ngay ↗</a
+      >
     </header>
     <main id="noi-dung">
       <section class="hero container" aria-labelledby="hero-title">
         <div class="eyebrow">Vòi sen LED hiển thị nhiệt độ</div>
-        <h1 id="hero-title">Chăm chút mỗi lần tắm. <br /> An toàn cho gia đình</h1>
+        <h1 id="hero-title">
+          Chăm chút mỗi lần tắm. <br />
+          An toàn cho gia đình
+        </h1>
         <figure class="hero-photo">
           <img
             src="assets/hero-core-features.png"
@@ -965,7 +984,6 @@
             />
           </figure>
         </div>
-  
       </section>
       <section class="section container" aria-labelledby="extras-title">
         <div class="section-head">
@@ -1012,7 +1030,24 @@
         </div>
         <div class="demo-comments">
           <article class="demo-comment">
-            <h4>Trần Quốc Hoàng - Huế đã phản hồi</h4>
+            <div style="display: flex; align-items: center; gap: 6px">
+              <img
+                class="fb-avatar"
+                src="./nam-3.jpg"
+                alt=""
+                loading="lazy"
+                width="40"
+                height="40"
+              />
+
+              <h4>Tuấn HN</h4>
+            </div>
+            <span class="time-review">12:34 27/09/2026</span>
+
+            <blockquote>
+              Mình thích có màn hình nhiệt độ ngay trên vòi, dễ quan sát khi
+              chuẩn bị nước tắm.
+            </blockquote>
             <figure>
               <img
                 src="assets/demo-video-8-clean.png"
@@ -1022,13 +1057,26 @@
                 alt="Khung hình video sản phẩm: vòi sen đang chảy nước và hiển thị nhiệt độ"
               />
             </figure>
-            <blockquote>
-              “Mình thích có màn hình nhiệt độ ngay trên vòi, dễ quan sát khi
-              chuẩn bị nước tắm.”
-            </blockquote>
           </article>
           <article class="demo-comment">
-            <h4>Nguyễn Tuấn Minh - Quảng Ninh đã phản hồi</h4>
+            <div style="display: flex; align-items: center; gap: 6px">
+              <img
+                class="fb-avatar"
+                src="./nam-2.jpg"
+                alt=""
+                loading="lazy"
+                width="40"
+                height="40"
+              />
+
+              <h4>Hoàng Sơn</h4>
+            </div>
+            <span class="time-review">19:44 26/09/2026</span>
+
+            <blockquote>
+              Có tặng kèm dây sen nên mình không cần mua dây riêng, tiện hơn khi
+              thay vòi.
+            </blockquote>
             <figure>
               <img
                 src="assets/demo-video-16.png"
@@ -1038,22 +1086,44 @@
                 alt="Khung hình video sản phẩm: thao tác lắp dây nối vào thân vòi sen"
               />
             </figure>
+          </article>
+          <article class="demo-comment">
+            <div style="display: flex; align-items: center; gap: 6px">
+              <img
+                class="fb-avatar"
+                src="./nu-1.jpg"
+                alt=""
+                loading="lazy"
+                width="40"
+                height="40"
+              />
+
+              <h4>Ngọc Linh</h4>
+            </div>
+            <span class="time-review">18:22 26/09/2026</span>
+
             <blockquote>
-              “Có tặng kèm dây sen nên mình không cần mua dây riêng, tiện hơn
-              khi thay vòi.”
+              Mình thích đèn và màn hình chạy bằng sức nước, không phải nhớ thay
+              pin.
             </blockquote>
           </article>
           <article class="demo-comment">
-            <h4>Lê Thùy Linh - Cần Thơ đã phản hồi</h4>
+            <div style="display: flex; align-items: center; gap: 6px">
+              <img
+                class="fb-avatar"
+                src="./nam-1.jpg"
+                alt=""
+                loading="lazy"
+                width="40"
+                height="40"
+              />
+
+              <h4>Đông Trần</h4>
+            </div>
+            <span class="time-review">16:39 26/09/2026</span>
+
             <blockquote>
-              “Mình thích đèn và màn hình chạy bằng sức nước, không phải nhớ
-              thay pin.”
-            </blockquote>
-          </article>
-          <article class="demo-comment">
-            <h4>Bùi Tuyết Mai - Hà Nội đã phản hồi</h4>
-            <blockquote>
-              “Có miễn phí vận chuyển và đổi trả trong 14 ngày đầu nếu không ưng
+              Có miễn phí vận chuyển và đổi trả trong 14 ngày đầu nếu không ưng
               nên mình yên tâm hơn khi cân nhắc.”
             </blockquote>
           </article>
