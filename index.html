@@ -574,14 +574,49 @@
       }
       .footer {
         border-top: 1px solid var(--line);
-        padding: 25px 0 110px;
+        padding: 32px 0 calc(110px + env(safe-area-inset-bottom));
         font-size: 13px;
         color: var(--muted);
       }
       .footer .container {
         display: flex;
         justify-content: space-between;
-        gap: 15px;
+        gap: 32px;
+      }
+      .footer-brand {
+        flex: 1;
+        min-width: 0;
+      }
+      .footer-brand strong {
+        color: var(--ink);
+        font-size: 17px;
+      }
+      .footer-brand p {
+        margin-top: 10px;
+        max-width: 320px;
+      }
+      .footer-contact {
+        flex: 1;
+        min-width: 0;
+      }
+      .footer-contact h2 {
+        font-size: 22px;
+        color: var(--ink);
+        margin-bottom: 14px;
+      }
+      .contact-details {
+        display: grid;
+        gap: 8px;
+        font-style: normal;
+        font-size: 14px;
+        overflow-wrap: anywhere;
+      }
+      .contact-details strong {
+        color: var(--ink);
+      }
+      .contact-placeholder-note {
+        margin-top: 14px;
+        font-size: 12px;
       }
       .sticky-buy {
         position: fixed;
@@ -798,7 +833,7 @@
         }
         .footer .container {
           flex-direction: column;
-          gap: 5px;
+          gap: 26px;
         }
         .sticky-buy {
           gap: 12px;
@@ -826,6 +861,126 @@
         html {
           scroll-behavior: auto;
         }
+      }
+      .experience-list {
+        display: grid;
+        gap: 48px;
+      }
+      .experience {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 48px;
+        row-gap: 14px;
+        align-items: center;
+      }
+      .experience h3 {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: end;
+        font-size: 32px;
+      }
+      .experience img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        aspect-ratio: 1;
+        object-fit: contain;
+        border-radius: 24px;
+        background: #dfeaed;
+      }
+      .experience p {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: start;
+        font-size: 16px;
+      }
+      .experience:nth-child(even) img {
+        grid-column: 2;
+      }
+      .experience:nth-child(even) h3,
+      .experience:nth-child(even) p {
+        grid-column: 1;
+      }
+      @media (max-width: 700px) {
+        .experience-list {
+          gap: 32px;
+        }
+        .experience {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 14px;
+        }
+        .experience h3 {
+          align-self: auto;
+          font-size: 26px;
+        }
+        .experience img {
+          border-radius: 18px;
+        }
+        .experience p {
+          font-size: 15px;
+        }
+      }
+      .order-end {
+        text-align: center;
+      }
+      .order-end p {
+        margin: 12px 0 20px;
+      }
+      .order-dialog {
+        width: min(600px, calc(100% - 24px));
+        max-height: calc(100dvh - 24px);
+        margin: auto;
+        padding: 0;
+        border: 0;
+        border-radius: 20px;
+        color: var(--ink);
+        background: #fff;
+        overscroll-behavior: contain;
+        overflow-y: auto;
+      }
+      .order-dialog::backdrop {
+        background: rgba(16, 43, 66, 0.65);
+      }
+      .dialog-bar {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 10px 16px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+      }
+      .dialog-bar h2 {
+        font-size: 22px;
+      }
+      .dialog-close {
+        min-width: 44px;
+        min-height: 44px;
+        flex-shrink: 0;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        color: var(--ink);
+        background: var(--ice);
+        font-size: 25px;
+        cursor: pointer;
+      }
+      .order-dialog .order-form {
+        border: 0;
+        border-radius: 0;
+        padding-bottom: max(24px, env(safe-area-inset-bottom));
+      }
+      .thank-you-copy {
+        padding: 28px;
+        text-align: center;
+      }
+      .thank-you-copy p {
+        margin-bottom: 24px;
+        font-size: 17px;
       }
     </style>
     <script>
@@ -985,39 +1140,104 @@
           </figure>
         </div>
       </section>
-      <section class="section container" aria-labelledby="extras-title">
+      <section class="section container" aria-labelledby="experience-title">
         <div class="section-head">
-          <div class="eyebrow">Thêm tiện ích trong cùng một vòi sen</div>
-          <h2 id="extras-title">Lõi lọc đá năng lượng &amp; tăng áp.</h2>
+          <div class="eyebrow">Từ thiết kế đến cách dùng</div>
+          <h2 id="experience-title">Những chi tiết cho mỗi lần tắm.</h2>
         </div>
-        <figure class="hero-photo">
-          <img
-            src="assets/filter-pressure.png"
-            width="1254"
-            height="1254"
-            loading="lazy"
-            alt="Ảnh minh họa cận lõi lọc đá năng lượng trong thân vòi và tia nước của vòi sen tăng áp"
-          />
-        </figure>
+        <div class="experience-list">
+          <article class="experience">
+            <h3>Nước chảy, màn hình sáng.</h3>
+            <img
+              src="assets/experience-temperature.png"
+              width="1254"
+              height="1254"
+              loading="lazy"
+              alt="Cận màn hình nhiệt độ trên vòi sen đang chảy nước"
+            />
+            <p>
+              Chạy hoàn toàn bằng sức nước, không điện hay pin. Trên 51°C: đèn
+              đỏ nhấp nháy.
+            </p>
+          </article>
+          <article class="experience">
+            <h3>ABS mạ Chrome.<br />Lõi bi khoáng.</h3>
+            <img
+              src="assets/experience-material.png"
+              width="1254"
+              height="1254"
+              loading="lazy"
+              alt="Cận lớp mạ Chrome và lõi đá năng lượng trong thân vòi sen"
+            />
+            <p>
+              Bề mặt sáng bóng, nhìn rõ lõi lọc đá năng lượng trong thân vòi.
+            </p>
+          </article>
+          <article class="experience">
+            <h3>Đầu phun tăng áp.</h3>
+            <img
+              src="assets/experience-pressure.png"
+              width="1254"
+              height="1254"
+              loading="lazy"
+              alt="Cận đầu phun và các tia nước từ những lỗ phun nhỏ"
+            />
+            <p>Tia nước qua những lỗ phun nhỏ trên mặt vòi.</p>
+          </article>
+          <article class="experience">
+            <h3>Vặn nối. Mở nước. Sử dụng.</h3>
+            <img
+              src="assets/experience-install.png"
+              width="1254"
+              height="1254"
+              loading="lazy"
+              alt="Minh họa nối dây sen vào vòi và mở nước sử dụng"
+            />
+            <p>
+              Tặng kèm dây sen. Đèn và màn hình tự bật khi nước chảy, tắt khi
+              ngưng nước.
+            </p>
+          </article>
+          <article class="experience">
+            <h3>Gọn tay. Chrome sáng bóng.</h3>
+            <img
+              src="assets/experience-design.png"
+              width="1254"
+              height="1254"
+              loading="lazy"
+              alt="Thiết kế vòi sen LED nhỏ gọn trong không gian phòng tắm"
+            />
+            <p>
+              Thiết kế nhỏ gọn, dễ cầm. Vệ sinh lõi lọc định kỳ khi sử dụng.
+            </p>
+          </article>
+        </div>
+        <!-- <div class="section-action">
+          <a class="button" href="#dang-ky">Đặt mua ngay ↗</a>
+        </div> -->
       </section>
+
       <section
-        class="section container power-layout"
-        aria-labelledby="power-title"
+        class="section container"
+        id="qua-tang"
+        aria-labelledby="gift-title"
       >
-        <div class="power-copy">
-          <div class="eyebrow">Vận hành bằng sức nước</div>
-          <h2 id="power-title">Không cắm điện.<br />Không thay pin.</h2>
-          <p>Màn hình và đèn hoạt động khi nước chảy.</p>
+        <div class="gift-card">
+          <figure>
+            <img
+              src="assets/gift-shower-hose.png"
+              width="1254"
+              height="1254"
+              loading="lazy"
+              alt="Dây nối (dây sen) tặng kèm vòi sen LED"
+            />
+          </figure>
+          <div class="gift-copy">
+            <div class="eyebrow">Quà tặng kèm vòi sen</div>
+            <h2 id="gift-title">Tặng kèm dây nối<br />(dây sen).</h2>
+            <p>Không cần mua thêm. Nhận về lắp dùng ngay.</p>
+          </div>
         </div>
-        <figure class="power-image">
-          <img
-            src="khong-mau.png"
-            width="1254"
-            height="1254"
-            loading="lazy"
-            alt="Ảnh chi tiết vòi sen LED với lõi lọc đá năng lượng trong thân vòi"
-          />
-        </figure>
       </section>
 
       <section
@@ -1130,30 +1350,7 @@
         </div>
       </section>
 
-      <section
-        class="section container"
-        id="qua-tang"
-        aria-labelledby="gift-title"
-      >
-        <div class="gift-card">
-          <figure>
-            <img
-              src="assets/gift-shower-hose.png"
-              width="1254"
-              height="1254"
-              loading="lazy"
-              alt="Dây nối (dây sen) tặng kèm vòi sen LED"
-            />
-          </figure>
-          <div class="gift-copy">
-            <div class="eyebrow">Quà tặng kèm vòi sen</div>
-            <h2 id="gift-title">Tặng kèm dây nối<br />(dây sen).</h2>
-            <p>Không cần mua thêm. Nhận về lắp dùng ngay.</p>
-          </div>
-        </div>
-      </section>
-
-      <section
+      <!-- <section
         class="section container"
         id="goi-mua"
         aria-labelledby="package-title"
@@ -1200,137 +1397,188 @@
             <strong>24 tháng</strong><span>Bảo hành lỗi nhà sản xuất.</span>
           </div>
         </div>
-      </section>
-      <section class="order-section" id="dang-ky" aria-labelledby="order-title">
-        <div class="container order-layout">
-          <div class="order-copy">
-            <div class="eyebrow">Chọn gói của bạn</div>
-            <h2 id="order-title">Đăng ký mua<br />vòi sen LED.</h2>
-            <p>Để lại thông tin để được liên hệ xác nhận đơn.</p>
-            <img
-              src="assets/hero-clean.png"
-              width="1254"
-              height="1254"
-              loading="lazy"
-              alt="Vòi sen LED hiển thị nhiệt độ"
-            />
-          </div>
-          <form class="order-form" id="orderForm" novalidate>
-            <h3>Đăng ký mua hàng</h3>
-            <p class="form-intro">
-              Shop sẽ liên hệ xác nhận trước khi giao hàng. Các mục có dấu * là
-              bắt buộc.
-            </p>
-            <input
-              type="hidden"
-              name="product"
-              value="Vòi sen LED hiển thị nhiệt độ"
-            /><input
-              type="hidden"
-              name="color"
-              value="LED đổi màu theo nhiệt độ"
-            />
-            <div class="form-grid">
-              <div class="field">
-                <label for="fullname">Họ và tên *</label
-                ><input
-                  id="fullname"
-                  name="fullname"
-                  autocomplete="name"
-                  placeholder="Tên người nhận"
-                  required
-                  maxlength="100"
-                  aria-describedby="fullnameError"
-                />
-                <p class="error" id="fullnameError"></p>
-              </div>
-              <div class="field">
-                <label for="phone">Số điện thoại *</label
-                ><input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  inputmode="tel"
-                  autocomplete="tel"
-                  placeholder="Ví dụ: 0912 345 678"
-                  required
-                  maxlength="24"
-                  aria-describedby="phoneError"
-                />
-                <p class="error" id="phoneError"></p>
-              </div>
-              <div class="field full">
-                <label for="address">Địa chỉ nhận hàng *</label
-                ><input
-                  id="address"
-                  name="address"
-                  autocomplete="street-address"
-                  placeholder="Số nhà, đường, phường/xã, tỉnh/thành phố"
-                  required
-                  maxlength="300"
-                  aria-describedby="addressError"
-                />
-                <p class="error" id="addressError"></p>
-              </div>
-              <div class="field full">
-                <label for="quantity">Gói mua</label
-                ><select
-                  id="quantity"
-                  name="quantity"
-                  aria-describedby="quantityError"
-                >
-                  <option value="1">1 vòi sen — 269.000đ</option>
-                  <option value="2">2 vòi sen — 510.000đ</option>
-                  <option value="3">3 vòi sen — 720.000đ</option>
-                </select>
-                <p class="error" id="quantityError"></p>
-              </div>
-              <div class="field full">
-                <label for="note"
-                  >Ghi chú
-                  <span style="font-weight: 400">(không bắt buộc)</span></label
-                ><textarea
-                  id="note"
-                  name="note"
-                  rows="2"
-                  maxlength="500"
-                  placeholder="Lời nhắn cho shop (không bắt buộc)"
-                ></textarea>
-              </div>
-            </div>
-            <div class="order-summary">
-              <div class="summary-row">
-                <span>Tổng tiền</span
-                ><strong id="orderTotal" aria-live="polite">269.000đ</strong>
-              </div>
-              <p class="fine">Miễn phí vận chuyển.</p>
-            </div>
-            <button class="button" id="submitOrder" type="submit">
-              Gửi đăng ký mua <span class="arrow" aria-hidden="true">↗</span>
-            </button>
-            <p class="privacy">
-              Thông tin bạn gửi được dùng để liên hệ và xử lý đăng ký mua hàng.
-            </p>
-            <p
-              class="form-status"
-              id="formStatus"
-              role="status"
-              aria-live="polite"
-              tabindex="-1"
-            ></p>
-            <noscript>
-              <p class="noscript">
-                Vui lòng bật JavaScript để gửi đăng ký mua và xem tổng tiền.
-              </p>
-            </noscript>
-          </form>
+      </section> -->
+      <!-- <section
+        class="order-section container order-end"
+        id="dang-ky"
+        aria-labelledby="order-end-title"
+      >
+        <h2 id="order-end-title">Đặt mua vòi sen LED.</h2>
+        <p>Tặng kèm dây sen · Miễn phí vận chuyển</p>
+        <a class="button" href="#dang-ky">Đăng ký mua ngay ↗</a>
+      </section> -->
+      <dialog
+        class="order-dialog"
+        id="orderDialog"
+        aria-labelledby="order-title"
+      >
+        <div class="dialog-bar">
+          <h2 id="order-title" tabindex="-1">Đăng ký mua vòi sen LED</h2>
+          <button
+            class="dialog-close"
+            id="closeOrderDialog"
+            type="button"
+            aria-label="Đóng cửa sổ đặt mua"
+          >
+            ×
+          </button>
         </div>
-      </section>
+        <form class="order-form" id="orderForm" novalidate>
+          <p class="form-intro">
+            Shop sẽ liên hệ xác nhận trước khi giao hàng. Các mục có dấu * là
+            bắt buộc.
+          </p>
+          <input
+            type="hidden"
+            name="product"
+            value="Vòi sen LED hiển thị nhiệt độ"
+          /><input
+            type="hidden"
+            name="color"
+            value="LED đổi màu theo nhiệt độ"
+          />
+          <div class="form-grid">
+            <div class="field">
+              <label for="fullname">Họ và tên *</label
+              ><input
+                id="fullname"
+                name="fullname"
+                autocomplete="name"
+                placeholder="Tên người nhận"
+                required
+                maxlength="100"
+                aria-describedby="fullnameError"
+              />
+              <p class="error" id="fullnameError"></p>
+            </div>
+            <div class="field">
+              <label for="phone">Số điện thoại *</label
+              ><input
+                id="phone"
+                name="phone"
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="Ví dụ: 0912 345 678"
+                required
+                maxlength="24"
+                aria-describedby="phoneError"
+              />
+              <p class="error" id="phoneError"></p>
+            </div>
+            <div class="field full">
+              <label for="address">Địa chỉ nhận hàng *</label
+              ><input
+                id="address"
+                name="address"
+                autocomplete="street-address"
+                placeholder="Số nhà, đường, phường/xã, tỉnh/thành phố"
+                required
+                maxlength="300"
+                aria-describedby="addressError"
+              />
+              <p class="error" id="addressError"></p>
+            </div>
+            <div class="field full">
+              <label for="quantity">Gói mua</label
+              ><select
+                id="quantity"
+                name="quantity"
+                aria-describedby="quantityError"
+              >
+                <option value="1">1 vòi sen — 269.000đ</option>
+                <option value="2">2 vòi sen — 510.000đ</option>
+                <option value="3">3 vòi sen — 720.000đ</option>
+              </select>
+              <p class="error" id="quantityError"></p>
+            </div>
+            <div class="field full">
+              <label for="note"
+                >Ghi chú
+                <span style="font-weight: 400">(không bắt buộc)</span></label
+              ><textarea
+                id="note"
+                name="note"
+                rows="2"
+                maxlength="500"
+                placeholder="Lời nhắn cho shop (không bắt buộc)"
+              ></textarea>
+            </div>
+          </div>
+          <div class="order-summary">
+            <div class="summary-row">
+              <span>Tổng tiền</span
+              ><strong id="orderTotal" aria-live="polite">269.000đ</strong>
+            </div>
+            <p class="fine">Miễn phí vận chuyển - quà tặng thêm bộ dây nối.</p>
+          </div>
+          <button class="button" id="submitOrder" type="submit">
+            Gửi đăng ký mua <span class="arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="privacy">
+            Thông tin bạn gửi được dùng để liên hệ và xử lý đăng ký mua hàng.
+          </p>
+          <p
+            class="form-status"
+            id="formStatus"
+            role="status"
+            aria-live="polite"
+            tabindex="-1"
+          ></p>
+          <noscript>
+            <p class="noscript">
+              Vui lòng bật JavaScript để gửi đăng ký mua và xem tổng tiền.
+            </p>
+          </noscript>
+        </form>
+      </dialog>
+      <dialog
+        class="order-dialog"
+        id="thankYouDialog"
+        aria-labelledby="thank-you-title"
+        aria-describedby="thank-you-description"
+      >
+        <div class="dialog-bar">
+          <h2 id="thank-you-title" tabindex="-1">Cảm ơn anh/chị đã đặt mua!</h2>
+          <button
+            class="dialog-close"
+            id="closeThankYouDialog"
+            type="button"
+            aria-label="Đóng lời cảm ơn"
+          >
+            ×
+          </button>
+        </div>
+        <div class="thank-you-copy">
+          <p id="thank-you-description">
+            Shop đã nhận đăng ký mua hàng. Shop sẽ liên hệ xác nhận trước khi
+            giao hàng.
+          </p>
+          <button class="button" id="dismissThankYouDialog" type="button">
+            Đã hiểu
+          </button>
+        </div>
+      </dialog>
     </main>
     <footer class="footer">
       <div class="container">
-        <strong>VÒI SEN LED</strong
-        ><span>Hiển thị nhiệt độ · Đèn báo 3 màu · Chạy bằng sức nước</span>
+        <div class="footer-brand">
+          <strong>VÒI SEN LED</strong>
+          <p>Hiển thị nhiệt độ · Đèn báo 3 màu · Chạy bằng sức nước</p>
+        </div>
+        <section
+          class="footer-contact"
+          id="lien-he"
+          aria-labelledby="contact-title"
+        >
+          <h2 id="contact-title">Liên hệ &amp; hỗ trợ</h2>
+          <!-- THÔNG TIN LIÊN HỆ MẪU: thay tên shop, số điện thoại/Zalo, địa chỉ và đường dẫn Fanpage bên dưới bằng thông tin thật trước khi sử dụng. -->
+          <address class="contact-details">
+            <strong>An Tâm Bath Store</strong>
+            <span>Địa chỉ: Trung tâm thương mại AEON Hà Đông</span>
+            <!-- <span>Facebook: [Điền đường dẫn Fanpage]</span> -->
+          </address>
+        </section>
       </div>
     </footer>
     <div
@@ -1355,6 +1603,99 @@
       const quantity = document.getElementById("quantity");
       const formStatus = document.getElementById("formStatus");
       const submitOrder = document.getElementById("submitOrder");
+      const orderDialog = document.getElementById("orderDialog");
+      const closeOrderDialog = document.getElementById("closeOrderDialog");
+      const thankYouDialog = document.getElementById("thankYouDialog");
+      let orderTrigger = null;
+      let pageScrollY = 0;
+      let savedBodyStyles = {};
+      let pageScrollLocked = false;
+      function lockPageScroll() {
+        if (pageScrollLocked) return;
+        pageScrollY = window.scrollY;
+        for (const key of ["position", "top", "left", "right", "overflow"]) {
+          savedBodyStyles[key] = document.body.style[key];
+        }
+        Object.assign(document.body.style, {
+          position: "fixed",
+          top: `-${pageScrollY}px`,
+          left: "0",
+          right: "0",
+          overflow: "hidden",
+        });
+        pageScrollLocked = true;
+      }
+      function openOrderDialog(trigger) {
+        if (orderDialog.open || thankYouDialog.open) return;
+        orderTrigger = trigger;
+        lockPageScroll();
+        orderDialog.showModal();
+        orderDialog.scrollTop = 0;
+        document.getElementById("order-title").focus({ preventScroll: true });
+        updateSticky();
+      }
+      closeOrderDialog.addEventListener("click", () => orderDialog.close());
+      document
+        .getElementById("closeThankYouDialog")
+        .addEventListener("click", () => thankYouDialog.close());
+      document
+        .getElementById("dismissThankYouDialog")
+        .addEventListener("click", () => thankYouDialog.close());
+      const isOutsideDialog = (dialog, event) => {
+        const bounds = dialog.getBoundingClientRect();
+        return (
+          event.clientX < bounds.left ||
+          event.clientX > bounds.right ||
+          event.clientY < bounds.top ||
+          event.clientY > bounds.bottom
+        );
+      };
+      function restorePageAfterDialog() {
+        if (orderDialog.open || thankYouDialog.open || !pageScrollLocked)
+          return;
+        Object.assign(document.body.style, savedBodyStyles);
+        pageScrollLocked = false;
+        window.scrollTo({ top: pageScrollY, behavior: "instant" });
+        updateHeroPosition();
+        if (orderTrigger && orderTrigger.isConnected) {
+          orderTrigger.focus({ preventScroll: true });
+        }
+        updateSticky();
+      }
+      [orderDialog, thankYouDialog].forEach((dialog) => {
+        let backdropPointerDown = false;
+        dialog.addEventListener("pointerdown", (event) => {
+          backdropPointerDown =
+            event.target === dialog && isOutsideDialog(dialog, event);
+        });
+        dialog.addEventListener("click", (event) => {
+          if (
+            backdropPointerDown &&
+            event.target === dialog &&
+            isOutsideDialog(dialog, event)
+          )
+            dialog.close();
+          backdropPointerDown = false;
+        });
+        dialog.addEventListener("close", restorePageAfterDialog);
+      });
+      function showThankYouDialog() {
+        lockPageScroll();
+        if (orderDialog.open) orderDialog.close();
+        if (!thankYouDialog.open) thankYouDialog.showModal();
+        document
+          .getElementById("thank-you-title")
+          .focus({ preventScroll: true });
+        updateSticky();
+      }
+      document.querySelectorAll('a[href="#dang-ky"]').forEach((link) => {
+        link.setAttribute("aria-haspopup", "dialog");
+        link.setAttribute("aria-controls", "orderDialog");
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          openOrderDialog(link);
+        });
+      });
       const formatPrice = (value) =>
         new Intl.NumberFormat("vi-VN").format(value) + "đ";
       quantity.addEventListener("change", () => {
@@ -1363,15 +1704,13 @@
         );
       });
       document.querySelectorAll("[data-package]").forEach((button) => {
+        button.setAttribute("aria-haspopup", "dialog");
+        button.setAttribute("aria-controls", "orderDialog");
         button.addEventListener("click", () => {
           quantity.value = button.dataset.package;
           quantity.dispatchEvent(new Event("change"));
           setError("quantity", "");
-          document.getElementById("dang-ky").scrollIntoView({
-            behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
-              ? "auto"
-              : "smooth",
-          });
+          openOrderDialog(button);
         });
       });
       function normalizePhone(value) {
@@ -1507,7 +1846,7 @@
           orderForm.reset();
           document.getElementById("orderTotal").textContent =
             formatPrice(PRODUCT_PRICE);
-          formStatus.focus();
+          showThankYouDialog();
         } catch (error) {
           if (error.message === "rejected")
             showStatus(
@@ -1521,7 +1860,7 @@
                 " Thông tin của bạn vẫn được giữ lại. Vui lòng kiểm tra kết nối trước khi thử lại; nếu đã gửi được, lần thử lại có thể tạo đăng ký trùng.",
               "error",
             );
-          formStatus.focus();
+          if (orderDialog.open) formStatus.focus();
         } finally {
           clearTimeout(timeout);
           sending = false;
@@ -1532,16 +1871,17 @@
         }
       });
       const stickyBuy = document.getElementById("stickyBuy");
-      let formVisible = false;
       let heroPassed = false;
       const updateSticky = () => {
         stickyBuy.hidden =
           !heroPassed ||
-          formVisible ||
+          orderDialog.open ||
+          thankYouDialog.open ||
           /^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement.tagName);
       };
       const hero = document.querySelector(".hero");
       const updateHeroPosition = () => {
+        if (orderDialog.open || thankYouDialog.open) return;
         heroPassed = hero.getBoundingClientRect().bottom <= 0;
         updateSticky();
       };
@@ -1558,15 +1898,16 @@
       updateHeroPosition();
       document.addEventListener("focusin", updateSticky);
       document.addEventListener("focusout", () => setTimeout(updateSticky, 0));
-      if ("IntersectionObserver" in window) {
-        new IntersectionObserver(
-          (entries) => {
-            formVisible = entries[0].isIntersecting;
-            updateSticky();
-          },
-          { threshold: 0 },
-        ).observe(orderForm);
-      }
+      const openOrderFromHash = () => {
+        if (window.location.hash === "#dang-ky" && !orderDialog.open) {
+          openOrderDialog(
+            document.querySelector('.order-end a[href="#dang-ky"]'),
+          );
+        }
+      };
+      window.addEventListener("hashchange", openOrderFromHash);
+      if (document.readyState === "complete") openOrderFromHash();
+      else window.addEventListener("load", openOrderFromHash, { once: true });
     </script>
   </body>
 </html>
