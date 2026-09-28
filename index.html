@@ -2004,25 +2004,19 @@
             console.log('FB Pixel Tracked: TimeOnPage_' + seconds + 's');
         }
     }
-
-    // Đặt các mốc thời gian muốn theo dõi (đơn vị: mili-giây)
     
-    // Mốc 15 giây (Khách hàng bắt đầu quan tâm)
     setTimeout(function() {
         trackTimeOnPage(15);
     }, 15000);
 
-    // Mốc 30 giây (Khách hàng đọc chi tiết/thông số)
     setTimeout(function() {
         trackTimeOnPage(30);
     }, 30000);
 
-    // Mốc 60 giây (Khách hàng rất quan tâm/đang cân nhắc mua)
     setTimeout(function() {
         trackTimeOnPage(60);
     }, 60000);
 
-    // Mốc 120 giây (Khách hàng tiềm năng cao)
     setTimeout(function() {
         trackTimeOnPage(120);
     }, 120000);
