@@ -1,0 +1,12 @@
+# Bốn hoàn cảnh sử dụng
+
+Ảnh: assets/use-four-situations.png (1254 × 1254). Một khối 2×2 ngay sau báo giá, thay ba tình huống cũ. Chú thích HTML để đọc rõ trên mobile. Tạo bằng imagegen tích hợp, tham chiếu assets/hero-clean.png. Người và bối cảnh là minh họa AI, không phải phản hồi khách hàng.
+
+## Prompt
+
+Create ONE square photorealistic collage with EXACTLY FOUR equally sized square photographs in a strict2x2 grid, thin white gutters, no text anywhere. Vietnamese home bathroom product lifestyle ad. All four scenes show the SAME exact shower model in the reference: round chrome head clear faceted back, BLACK central digital38°C screen, blue illuminated nozzle rim, gray beads neck, transparent handle filled orange-brown beads, chrome collars silver hose. Keep exact design, no extra buttons. Product large enough recognizable in every scene.
+TOP LEFT: Vietnamese mother adult in modest short sleeve shirt holds running shower and looks at screen while preparing water in shower tray; her child aged7 fully clothed in opaque pajamas stands beside her outside spray, attentive. Family preparing bath, NO child bathing or nudity. Water directed downward away from people.
+TOP RIGHT: Vietnamese older woman65 in closed white bathrobe and glasses, independently holds shower in front and looks at its temperature readout, comfortable bright clean bathroom. Water sprays downward into tray.
+BOTTOM LEFT: Vietnamese adult daughter35 in modest casual clothes standing beside father70 fully clothed in opaque short-sleeve shirt, she holds the shower and shows him its screen before bathing, caring everyday moment. Neither in spray. No medical setting.
+BOTTOM RIGHT: Vietnamese adult man30 in closed opaque navy bathrobe preparing shower at home after daily routine, holds running shower at natural angle and sees lit screen, relaxed everyday expression.
+All people modestly and fully clothed, no nudity. Natural anatomically correct hands, realistic relative product scale, bright blue-white tiles, homecare warmth, photographic realism, clear varying faces/ages/use situations. Each panel medium-close framing faces and shower within upper80% of its own square; leave bottom20% of each scene quieter for later HTML caption overlay. No letters except38°C on product actual screen, no badges, arrows, beforeafter, claims, watermarks. Consistent soft daylight color grading. Deliver single square image with4photo panels.

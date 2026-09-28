@@ -53,7 +53,7 @@ const assert = require('node:assert/strict');
   await page.waitForFunction(() => !document.getElementById('stickyBuy').hidden);
   await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   await page.waitForFunction(() => document.getElementById('stickyBuy').hidden);
-  for (const [quantity, total] of [['1', '269.000'], ['2', '510.000'], ['3', '720.000']]) {
+  for (const [quantity, total] of [['1', '396.000'], ['2', '750.000'], ['3', '950.000']]) {
     await page.locator(`[data-package="${quantity}"]`).click();
     assert.equal(await page.locator('#orderDialog').evaluate(el => el.open), true);
     assert.equal(await page.locator('#quantity').inputValue(), quantity);
@@ -93,9 +93,9 @@ const assert = require('node:assert/strict');
     assert.equal(await page.locator(`.color-card img[src="${src}"]`).isVisible(), true);
   }
   await page.locator('#quantity').selectOption('3');
-  assert.match(await page.locator('#orderTotal').innerText(), /720[.,]000/);
+  assert.match(await page.locator('#orderTotal').innerText(), /950[.,]000/);
   await page.locator('#quantity').selectOption('2');
-  assert.match(await page.locator('#orderTotal').innerText(), /510[.,]000/);
+  assert.match(await page.locator('#orderTotal').innerText(), /750[.,]000/);
   await page.locator('#quantity').selectOption('1');
   const submit = page.locator('#orderForm button[type="submit"]');
   await submit.click();
@@ -142,7 +142,7 @@ const assert = require('node:assert/strict');
   assert.equal(requests, before + 1, 'Duplicate submit blocked');
   assert.equal(await page.locator('#fullname').inputValue(), '', 'Confirmed success resets form');
   assert.equal(await page.locator('#quantity').inputValue(), '1');
-  assert.match(await page.locator('#orderTotal').innerText(), /269[.,]000/);
+  assert.match(await page.locator('#orderTotal').innerText(), /396[.,]000/);
   assert.equal(await page.locator('#formStatus').getAttribute('data-state'), 'success');
   await page.waitForFunction(() => document.getElementById('thankYouDialog').open);
   assert.equal(await page.locator('#orderDialog').evaluate(el => el.open), false);
@@ -162,5 +162,6 @@ const assert = require('node:assert/strict');
   console.log(JSON.stringify(result, null, 2));
   await browser.close();
 })().catch(error => { console.error(error); process.exit(1); });
+
 
 
