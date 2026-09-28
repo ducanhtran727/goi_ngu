@@ -1,0 +1,7 @@
+# Ba trạng thái đèn trong một khung
+
+File assets/three-led-states-v2.png (1536 × 1024). Tạo/chỉnh bằng imagegen tích hợp từ xanh-luc.png, xanh-lam.png, mau-do.png. Cận sản phẩm; nhãn và cảnh báo trên 51°C chuyển sang HTML dễ đọc. Giữ ảnh nguồn.
+
+## Prompt
+
+Recompose the THREE reference product photos into ONE compact landscape comparison image, aspect ratio3:2, three equal vertical panels side-by-side with thin white dividers. LEFT green LED with screen30°C, CENTER blue LED with screen38°C, RIGHT red LED with screen45°C. EXACT same shower model and angle across all3: round chrome head, clear faceted casing, black central digital screen, gray mineral beads neck, transparent orange-bead handle. Zoom tightly on head and upper handle so each screen/nozzle is very easy to see when the wholeimage is only350px wide. Head occupies upper half of each panel, a short length of orangebead handle below; fine waterjets downward visible withinpanel. Dark neutral gray bathroom background as reference, strong clear green/blue/red illumination. Product physicalstructure matchesreference, no controls added. Remove ALL promotional text, captions, numbers outside screen, banners, logos, footer warnings from the images because those will be reproduced as readable HTML beneath image. No text except30°C/38°C/45°C on respective actual product screens. No humans, no safety icons or claims, no different panelsizes. THREE exact equal columns, all3 clearly visible. One finished3:2landscape image.
