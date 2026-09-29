@@ -2180,8 +2180,8 @@
         link.setAttribute("aria-controls", "orderDialog");
         link.addEventListener("click", (event) => {
           event.preventDefault();
-          openOrderDialog(link);
           fbq("track", "Lead");
+          openOrderDialog(link);
         });
       });
       const formatPrice = (value) =>
@@ -2447,20 +2447,20 @@
         }
       }
 
-      setTimeout(function() {
-          trackTimeOnPage(15);
+      setTimeout(function () {
+        trackTimeOnPage(15);
       }, 15000);
 
-      setTimeout(function() {
-          trackTimeOnPage(30);
+      setTimeout(function () {
+        trackTimeOnPage(30);
       }, 30000);
 
-      setTimeout(function() {
-          trackTimeOnPage(60);
+      setTimeout(function () {
+        trackTimeOnPage(60);
       }, 60000);
 
-      setTimeout(function() {
-          trackTimeOnPage(120);
+      setTimeout(function () {
+        trackTimeOnPage(120);
       }, 120000);
     </script>
     <script>
