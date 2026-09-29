@@ -1,0 +1,52 @@
+{
+  "initialErrors": [],
+  "dom": {
+    "duplicateIds": [],
+    "inlineAfterReview": "dang-ky",
+    "stickyPresent": false
+  },
+  "viewports": [
+    {
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "width": 1440,
+      "scroll": 1440
+    }
+  ],
+  "prices": [
+    "396.000đ",
+    "750.000đ",
+    "950.000đ"
+  ],
+  "failures": [
+    {
+      "mode": "http",
+      "status": "Chưa thể xác nhận đăng ký đã được tiếp nhận. Thông tin vẫn được giữ lại. Vui lòng kiểm tra kết nối trước khi thử lại; lần thử lại có thể tạo đăng ký trùng.",
+      "state": "error"
+    },
+    {
+      "mode": "network",
+      "status": "Chưa thể xác nhận đăng ký đã được tiếp nhận. Thông tin vẫn được giữ lại. Vui lòng kiểm tra kết nối trước khi thử lại; lần thử lại có thể tạo đăng ký trùng.",
+      "state": "error"
+    },
+    {
+      "mode": "reject",
+      "status": "Hệ thống chưa tiếp nhận được đăng ký. Thông tin vẫn được giữ lại; vui lòng kiểm tra và thử lại.",
+      "state": "error"
+    }
+  ],
+  "popupOpens": true,
+  "success": {
+    "thanks": true,
+    "state": "success",
+    "status": "Đã nhận đăng ký của bạn. Shop sẽ liên hệ xác nhận sản phẩm và phí vận chuyển trước khi giao hàng."
+  },
+  "errors": [],
+  "mockedRequests": 4
+}
