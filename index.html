@@ -1500,6 +1500,82 @@
       .version-picker > .button {
         width: 100%;
       }
+      /* Compact purchase forms, with comfortable mobile touch targets. */
+      .order-form .form-grid {
+        gap: 10px;
+      }
+      .order-form .field label {
+        margin-bottom: 4px;
+      }
+      .order-form input:not([type="radio"]):not([type="hidden"]),
+      .order-form select,
+      .order-form textarea {
+        min-height: 44px;
+        padding: 9px 11px;
+      }
+      .form-variants {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        min-width: 0;
+      }
+      .form-variants legend {
+        padding: 0;
+        margin-bottom: 4px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .order-form .form-variant-option {
+        gap: 9px;
+        min-height: 44px;
+        padding: 6px 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .form-variant-option:has(input:checked) {
+        background: var(--ice);
+        border-color: #287252;
+      }
+      .order-form input[type="radio"] {
+        width: 18px;
+        height: 18px;
+        min-height: 0;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 18px;
+        accent-color: #287252;
+      }
+      .order-form .order-summary {
+        margin-top: 4px;
+        padding: 8px 0;
+      }
+      .order-form .order-summary .fine {
+        margin: 0 0 4px;
+        font-size: 12px;
+      }
+      .order-form .privacy {
+        margin: 6px 0;
+        font-size: 11px;
+      }
+      .order-form .form-intro {
+        margin: 6px 0 12px;
+      }
+      .order-notes summary {
+        cursor: pointer;
+        font-size: 13px;
+        padding: 6px 0;
+        color: var(--muted);
+      }
+      .order-notes textarea {
+        margin-top: 4px;
+      }
+      @media (max-width: 600px) {
+        .order-form,
+        .order-dialog .order-form {
+          padding: 14px;
+        }
+      }
     </style>
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -1985,23 +2061,39 @@
               <div class="field full">
                 <fieldset class="form-variants" id="inlineVariant">
                   <legend>Phiên bản</legend>
-                  <label style="display: flex; align-items: center;" class="form-variant-option" for="inlineVariantNoScreen"
+                  <label
+                    style="display: flex; align-items: center"
+                    class="form-variant-option"
+                    for="inlineVariantNoScreen"
                     ><input
                       id="inlineVariantNoScreen"
                       type="radio"
                       name="variant"
                       value="no-screen"
-                      style="width: 16px; height: 16px; margin-right: 8px; min-height: 24px;"
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 8px;
+                        min-height: 24px;
+                      "
                       checked
                     /><span>Không màn hình</span></label
                   >
-                  <label style="display: flex; align-items: center;" class="form-variant-option" for="inlineVariantDisplay"
+                  <label
+                    style="display: flex; align-items: center"
+                    class="form-variant-option"
+                    for="inlineVariantDisplay"
                     ><input
                       id="inlineVariantDisplay"
                       type="radio"
                       name="variant"
                       value="display"
-                      style="width: 16px; height: 16px; margin-right: 8px; min-height: 24px;"
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 8px;
+                        min-height: 24px;
+                      "
                     /><span>Có màn hình nhiệt độ</span></label
                   >
                 </fieldset>
@@ -2013,25 +2105,23 @@
                   name="quantity"
                   aria-describedby="inlineQuantityError"
                 >
-                  <option value="1">1 sản phẩm</option>
-                  <option value="2">Combo 2 sản phẩm</option>
-                <option value="3">Combo 3 sản phẩm</option>
+                  <option value="1">1 chiếc</option>
+                  <option value="2">2 chiếc</option>
+                  <option value="3">3 chiếc</option>
                 </select>
                 <p class="error" id="inlineQuantityError"></p>
               </div>
-              <div class="field full">
-                <label for="inlineNote"
-                  >Ghi chú
-                  <span style="font-weight: 400">(không bắt buộc)</span></label
-                >
+              <details class="field full order-notes">
+                <summary>Thêm ghi chú (không bắt buộc)</summary>
                 <textarea
                   id="inlineNote"
                   name="note"
+                  aria-label="Ghi chú cho shop"
                   rows="2"
                   maxlength="500"
                   placeholder="Lời nhắn cho shop (không bắt buộc)"
                 ></textarea>
-              </div>
+              </details>
             </div>
             <div class="order-summary">
               <div class="summary-row">
@@ -2136,23 +2226,39 @@
             <div class="field full">
               <fieldset class="form-variants" id="variant">
                 <legend>Phiên bản</legend>
-                <label style="display: flex; align-items: center;" class="form-variant-option" for="VariantNoScreen"
+                <label
+                  style="display: flex; align-items: center"
+                  class="form-variant-option"
+                  for="VariantNoScreen"
                   ><input
                     id="VariantNoScreen"
                     type="radio"
                     name="variant"
                     value="no-screen"
-                    style="width: 16px; height: 16px; margin-right: 8px; min-height: 24px;"
+                    style="
+                      width: 16px;
+                      height: 16px;
+                      margin-right: 8px;
+                      min-height: 24px;
+                    "
                     checked
                   /><span>Không màn hình</span></label
                 >
-                <label style="display: flex; align-items: center;" class="form-variant-option" for="VariantDisplay"
+                <label
+                  style="display: flex; align-items: center"
+                  class="form-variant-option"
+                  for="VariantDisplay"
                   ><input
                     id="VariantDisplay"
                     type="radio"
                     name="variant"
                     value="display"
-                    style="width: 16px; height: 16px; margin-right: 8px; min-height: 24px;"
+                    style="
+                      width: 16px;
+                      height: 16px;
+                      margin-right: 8px;
+                      min-height: 24px;
+                    "
                   /><span>Có màn hình nhiệt độ</span></label
                 >
               </fieldset>
@@ -2164,24 +2270,23 @@
                 name="quantity"
                 aria-describedby="quantityError"
               >
-                <option value="1">1 sản phẩm</option>
-                <option value="2">Combo 2 sản phẩm</option>
-                <option value="3">Combo 3 sản phẩm</option>
+                <option value="1">1 chiếc</option>
+                <option value="2">2 chiếc</option>
+                <option value="3">3 chiếc</option>
               </select>
               <p class="error" id="quantityError"></p>
             </div>
-            <div class="field full">
-              <label for="note"
-                >Ghi chú
-                <span style="font-weight: 400">(không bắt buộc)</span></label
-              ><textarea
+            <details class="field full order-notes">
+              <summary>Thêm ghi chú (không bắt buộc)</summary>
+              <textarea
                 id="note"
                 name="note"
+                aria-label="Ghi chú cho shop"
                 rows="2"
                 maxlength="500"
                 placeholder="Lời nhắn cho shop (không bắt buộc)"
               ></textarea>
-            </div>
+            </details>
           </div>
           <div class="order-summary">
             <p class="fine">Miễn phí vận chuyển.</p>
