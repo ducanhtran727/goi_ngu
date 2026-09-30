@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#F3FAF6" />
     <meta
       name="description"
-      content="Vòi sen LED hiển thị nhiệt độ, chạy bằng sức nước. Bản không màn hình 198.000đ; bản có màn hình 360.000đ. Chưa gồm phí vận chuyển."
+      content="Vòi sen LED hiển thị nhiệt độ, chạy bằng sức nước. Bản không màn hình 198.000đ; bản có màn hình 368.000đ."
     />
     <title>Vòi sen LED — Nhìn nhiệt độ nước trước khi tắm</title>
     <style>
@@ -1592,7 +1592,9 @@
           <p class="version-deal">ƯU ĐÃI GIẢM 55%</p>
           <h2 id="package-title">Chọn phiên bản phù hợp</h2>
           <fieldset class="version-options">
-            <!-- <legend class="version-legend">Giá cho 1 sản phẩm, chưa gồm phí vận chuyển</legend> -->
+            <legend class="version-legend">
+              Giá cho 1 sản phẩm · Miễn phí vận chuyển
+            </legend>
             <label class="version-option"
               ><input
                 type="radio"
@@ -1608,7 +1610,7 @@
             <label class="version-option"
               ><input type="radio" name="topVariant" value="display" />
               <span
-                ><strong>360.000đ</strong><b>Hiển thị nhiệt độ</b
+                ><strong>368.000đ</strong><b>Hiển thị nhiệt độ</b
                 ><small>Xem số nhiệt độ nước</small></span
               >
             </label>
@@ -1621,12 +1623,14 @@
               loading="lazy"
               alt="Phiên bản vòi sen LED không màn hình nhiệt độ"
             />
-            <p style="font-weight: 600;">
+            <p style="font-weight: 600">
               Cả hai bản đều có: Đèn cảnh báo LED 3 màu theo mức nhiệt,lõi lọc,
               tăng áp và chạy bằng sức nước.
             </p>
           </div>
-          <!-- <p class="version-shipping">Chưa gồm phí vận chuyển. Phí được báo khi xác nhận đơn.</p> -->
+          <p class="version-shipping">
+            Miễn phí vận chuyển cho cả hai phiên bản.
+          </p>
           <a class="button" id="nut-mua-so-2" href="#dang-ky"
             >Đặt mua phiên bản đã chọn ↗</a
           >
@@ -1914,10 +1918,7 @@
           <div class="order-copy">
             <div class="eyebrow">ĐẶT MUA</div>
             <h2 id="inline-order-title">Đăng ký mua vòi sen LED</h2>
-            <p>
-              Bản có màn hình tặng kèm dây sen. Cả hai bản chưa gồm phí vận
-              chuyển.
-            </p>
+            <p>Bản có màn hình tặng kèm dây sen</p>
             <p>Đổi trả miễn phí 14 ngày đầu · Bảo hành lỗi NSX 24 tháng</p>
             <img
               src="assets/gift-shower-hose.png"
@@ -1937,11 +1938,7 @@
               name="product"
               value="Vòi sen LED hiển thị nhiệt độ"
             />
-            <input
-              type="hidden"
-              name="color"
-              value="Không màn hình nhiệt độ"
-            />
+            <input type="hidden" name="color" value="Không màn hình nhiệt độ" />
             <input type="hidden" name="user_agent" class="ua-field" />
             <div class="form-grid">
               <div class="field">
@@ -1986,24 +1983,39 @@
                 <p class="error" id="inlineAddressError"></p>
               </div>
               <div class="field full">
-                <label for="inlineVariant">Phiên bản</label>
-                <select id="inlineVariant" name="variant">
-                  <option value="display">
-                    Có màn hình nhiệt độ — 360.000đ
-                  </option>
-                  <option value="no-screen" selected>
-                    Không màn hình nhiệt độ — 198.000đ
-                  </option>
-                </select>
+                <fieldset class="form-variants" id="inlineVariant">
+                  <legend>Phiên bản</legend>
+                  <label style="display: flex; align-items: center;" class="form-variant-option" for="inlineVariantNoScreen"
+                    ><input
+                      id="inlineVariantNoScreen"
+                      type="radio"
+                      name="variant"
+                      value="no-screen"
+                      style="width: 16px; height: 16px; margin-right: 8px; min-height: 24px;"
+                      checked
+                    /><span>Không màn hình</span></label
+                  >
+                  <label style="display: flex; align-items: center;" class="form-variant-option" for="inlineVariantDisplay"
+                    ><input
+                      id="inlineVariantDisplay"
+                      type="radio"
+                      name="variant"
+                      value="display"
+                      style="width: 16px; height: 16px; margin-right: 8px; min-height: 24px;"
+                    /><span>Có màn hình nhiệt độ</span></label
+                  >
+                </fieldset>
               </div>
               <div class="field full">
-                <label for="inlineQuantity">Gói mua</label>
+                <label for="inlineQuantity">Số lượng</label>
                 <select
                   id="inlineQuantity"
                   name="quantity"
                   aria-describedby="inlineQuantityError"
                 >
-                  <option value="1">1 vòi sen — 198.000đ</option>
+                  <option value="1">1 sản phẩm</option>
+                  <option value="2">Combo 2 sản phẩm</option>
+                <option value="3">Combo 3 sản phẩm</option>
                 </select>
                 <p class="error" id="inlineQuantityError"></p>
               </div>
@@ -2023,14 +2035,12 @@
             </div>
             <div class="order-summary">
               <div class="summary-row">
-                <span>Tiền sản phẩm</span>
+                <span>Tổng tiền</span>
                 <strong id="inlineOrderTotal" aria-live="polite"
                   >198.000đ</strong
                 >
               </div>
-              <p class="fine">
-                Chưa gồm phí vận chuyển. Phí được báo khi xác nhận đơn.
-              </p>
+              <p class="fine">Miễn phí vận chuyển.</p>
             </div>
             <button class="button" id="inlineSubmitOrder" type="submit">
               Gửi đăng ký mua <span class="arrow" aria-hidden="true">↗</span>
@@ -2055,7 +2065,7 @@
         aria-labelledby="order-end-title"
       >
         <h2 id="order-end-title">Đặt mua vòi sen LED.</h2>
-        <p>Bản có màn hình tặng kèm dây sen. Chưa gồm phí vận chuyển.</p>
+        <p>Bản có màn hình tặng kèm dây sen. Miễn phí vận chuyển.</p>
         <a class="button" href="#dang-ky">Đăng ký mua ngay ↗</a>
       </section> -->
       <dialog
@@ -2075,19 +2085,11 @@
           </button>
         </div>
         <form class="order-form" id="orderForm" novalidate>
-          <p class="form-intro">
-            Shop sẽ liên hệ xác nhận trước khi giao hàng. Các mục có dấu * là
-            bắt buộc.
-          </p>
           <input
             type="hidden"
             name="product"
             value="Vòi sen LED hiển thị nhiệt độ"
-          /><input
-            type="hidden"
-            name="color"
-            value="Không màn hình nhiệt độ"
-          />
+          /><input type="hidden" name="color" value="Không màn hình nhiệt độ" />
           <input type="hidden" id="user_agent" name="user_agent" />
           <div class="form-grid">
             <div class="field">
@@ -2132,22 +2134,39 @@
               <p class="error" id="addressError"></p>
             </div>
             <div class="field full">
-              <label for="variant">Phiên bản</label>
-              <select id="variant" name="variant">
-                <option value="display">Có màn hình nhiệt độ — 360.000đ</option>
-                <option value="no-screen" selected>
-                  Không màn hình nhiệt độ — 198.000đ
-                </option>
-              </select>
+              <fieldset class="form-variants" id="variant">
+                <legend>Phiên bản</legend>
+                <label style="display: flex; align-items: center;" class="form-variant-option" for="VariantNoScreen"
+                  ><input
+                    id="VariantNoScreen"
+                    type="radio"
+                    name="variant"
+                    value="no-screen"
+                    style="width: 16px; height: 16px; margin-right: 8px; min-height: 24px;"
+                    checked
+                  /><span>Không màn hình</span></label
+                >
+                <label style="display: flex; align-items: center;" class="form-variant-option" for="VariantDisplay"
+                  ><input
+                    id="VariantDisplay"
+                    type="radio"
+                    name="variant"
+                    value="display"
+                    style="width: 16px; height: 16px; margin-right: 8px; min-height: 24px;"
+                  /><span>Có màn hình nhiệt độ</span></label
+                >
+              </fieldset>
             </div>
             <div class="field full">
-              <label for="quantity">Gói mua</label
+              <label for="quantity">Số lượng</label
               ><select
                 id="quantity"
                 name="quantity"
                 aria-describedby="quantityError"
               >
-                <option value="1">1 vòi sen — 198.000đ</option>
+                <option value="1">1 sản phẩm</option>
+                <option value="2">Combo 2 sản phẩm</option>
+                <option value="3">Combo 3 sản phẩm</option>
               </select>
               <p class="error" id="quantityError"></p>
             </div>
@@ -2165,13 +2184,11 @@
             </div>
           </div>
           <div class="order-summary">
+            <p class="fine">Miễn phí vận chuyển.</p>
             <div class="summary-row">
-              <span>Tiền sản phẩm</span
+              <span>Tổng tiền</span
               ><strong id="orderTotal" aria-live="polite">198.000đ</strong>
             </div>
-            <p class="fine">
-              Chưa gồm phí vận chuyển. Phí được báo khi xác nhận đơn.
-            </p>
           </div>
           <button class="button" id="submitOrder" type="submit">
             Gửi đăng ký mua <span class="arrow" aria-hidden="true">↗</span>
@@ -2243,7 +2260,10 @@
     <script>
       "use strict";
       const PRODUCT_PRICE = 198000;
-      const PRICE_BY_VARIANT = { "no-screen": 198000, display: 360000 };
+      const PRICE_BY_VARIANT = {
+        "no-screen": { 1: 198000, 2: 368000, 3: 456000 },
+        display: { 1: 368000, 2: 698000, 3: 928000 },
+      };
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbzt8W8MGv5aylSvFUANGb1-QKzujJ366YRznnAOTRmdi4uMER7FSD_2wGVyPBtwjT6H/exec";
       const orderForm = document.getElementById("orderForm");
@@ -2362,7 +2382,8 @@
       const formatPrice = (value) =>
         new Intl.NumberFormat("vi-VN").format(value) + "đ";
       const selectedVariant = (form) => form.elements.variant.value;
-      const selectedPrice = (form) => PRICE_BY_VARIANT[selectedVariant(form)];
+      const selectedPrice = (form, amount = form.elements.quantity.value) =>
+        PRICE_BY_VARIANT[selectedVariant(form)][amount];
       const purchaseForms = [
         orderForm,
         document.getElementById("inlineOrderForm"),
@@ -2372,25 +2393,23 @@
         form.elements.color.value = noScreen
           ? "Không màn hình nhiệt độ"
           : "Có màn hình nhiệt độ";
-        form.elements.quantity.replaceChildren(
-          new Option(`1 vòi sen — ${formatPrice(selectedPrice(form))}`, "1"),
-        );
-        form.querySelector(".summary-row > span").textContent = "Tiền sản phẩm";
+
+        form.querySelector(".summary-row > span").textContent = "Tổng tiền";
         form.querySelector(".summary-row strong").textContent = formatPrice(
           selectedPrice(form),
         );
-        form.querySelector(".order-summary .fine").textContent =
-          "Chưa gồm phí vận chuyển. Phí được báo khi xác nhận đơn.";
+
         form.elements.product.value = noScreen
           ? "Vòi sen LED không màn hình nhiệt độ"
           : "Vòi sen LED có màn hình nhiệt độ";
       }
-      function syncVariant(value) {
+      function syncVariant(value, resetQuantity = false) {
         const variant = Object.hasOwn(PRICE_BY_VARIANT, value)
           ? value
           : "no-screen";
         purchaseForms.forEach((form) => {
           form.elements.variant.value = variant;
+          if (resetQuantity) form.elements.quantity.value = "1";
           updateVariant(form);
         });
         document.querySelectorAll('[name="topVariant"]').forEach((radio) => {
@@ -2402,19 +2421,23 @@
         payload.set("product", form.elements.product.value);
         payload.set("variant", selectedVariant(form));
         payload.set("color", form.elements.color.value);
-        payload.set("note", [payload.get("note")].filter(Boolean));
+        payload.set("note", String(payload.get("note") || ""));
       }
       purchaseForms.forEach((form) =>
-        form.elements.variant.addEventListener("change", () =>
-          syncVariant(selectedVariant(form)),
-        ),
+        form
+          .querySelectorAll('input[name="variant"]')
+          .forEach((radio) =>
+            radio.addEventListener("change", () =>
+              syncVariant(selectedVariant(form)),
+            ),
+          ),
       );
       document
         .querySelectorAll('[name="topVariant"]')
         .forEach((radio) =>
           radio.addEventListener("change", () => syncVariant(radio.value)),
         );
-      syncVariant("no-screen");
+      syncVariant("no-screen", true);
       quantity.addEventListener("change", () => {
         updateVariant(orderForm);
       });
@@ -2455,8 +2478,8 @@
               : "",
           quantity:
             !["display", "no-screen"].includes(selectedVariant(orderForm)) ||
-            quantity.value !== "1"
-              ? "Vui lòng chọn 1 sản phẩm."
+            !["1", "2", "3"].includes(quantity.value)
+              ? "Vui lòng chọn số lượng từ 1 đến 3."
               : "",
         };
         Object.entries(messages).forEach(([id, message]) => {
@@ -2546,15 +2569,15 @@
             throw new Error("unconfirmed");
           }
           fbq("track", "Purchase", {
-            value: submittedPrice,
+            value: 198000,
             currency: "VND",
           });
           showStatus(
-            "Đã nhận đăng ký của bạn. Shop sẽ liên hệ xác nhận sản phẩm và phí vận chuyển trước khi giao hàng.",
+            "Đã nhận đăng ký của bạn. Shop sẽ liên hệ xác nhận sản phẩm trước khi giao hàng.",
             "success",
           );
           orderForm.reset();
-          syncVariant("no-screen");
+          syncVariant("no-screen", true);
           document.getElementById("user_agent").value = navigator.userAgent;
           document.getElementById("orderTotal").textContent =
             formatPrice(PRODUCT_PRICE);
@@ -2741,8 +2764,8 @@
                 : "",
             inlineQuantity:
               !["display", "no-screen"].includes(selectedVariant(inlineForm)) ||
-              inlineQty.value !== "1"
-                ? "Vui lòng chọn 1 sản phẩm."
+              !["1", "2", "3"].includes(inlineQty.value)
+                ? "Vui lòng chọn số lượng từ 1 đến 3."
                 : "",
           };
           Object.entries(msgs).forEach(function (pair) {
@@ -2817,15 +2840,15 @@
               throw new Error("unconfirmed");
             }
             fbq("track", "Purchase", {
-              value: submittedPrice,
+              value: 198000,
               currency: "VND",
             });
             showSt(
-              "Đã nhận đăng ký của bạn. Shop sẽ liên hệ xác nhận sản phẩm và phí vận chuyển trước khi giao hàng.",
+              "Đã nhận đăng ký của bạn. Shop sẽ liên hệ xác nhận sản phẩm trước khi giao hàng.",
               "success",
             );
             inlineForm.reset();
-            syncVariant("no-screen");
+            syncVariant("no-screen", true);
             inlineForm.querySelector(".ua-field").value = navigator.userAgent;
             document.getElementById("inlineOrderTotal").textContent =
               formatPrice(PRODUCT_PRICE);
