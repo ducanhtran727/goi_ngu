@@ -2,11 +2,11 @@
   {
     "viewport": 390,
     "dpr": 2,
-    "bytes": 975252,
+    "bytes": 2462998,
     "images": [
       {
-        "src": "file:///E:/goi_ngu/assets/webp/hero-nano-carbon-v6-800.webp",
-        "width": 358,
+        "src": "file:///E:/goi_ngu/assets/webp/hero-nano-carbon-v7.webp",
+        "width": 1254,
         "displayWidth": 358
       },
       {
@@ -99,11 +99,11 @@
   {
     "viewport": 1440,
     "dpr": 2,
-    "bytes": 1677176,
+    "bytes": 3086582,
     "images": [
       {
-        "src": "file:///E:/goi_ngu/assets/webp/hero-nano-carbon-v6-1254.webp",
-        "width": 660,
+        "src": "file:///E:/goi_ngu/assets/webp/hero-nano-carbon-v7.webp",
+        "width": 1254,
         "displayWidth": 660
       },
       {

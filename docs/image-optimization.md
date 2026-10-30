@@ -1,5 +1,9 @@
 # Image optimization — 2026-10-30
 
+## Hero clarity follow-up
+
+The hero now uses `assets/webp/hero-nano-carbon-v6-original.webp`: 1254 × 1254, lossless WebP, 1,472,838 bytes. Removed the hero's responsive downsampled candidates to preserve source detail on every device. Decoded RGB pixels were verified identical to the original PNG. Its new filename avoids reusing cached compressed versions. Other images retain responsive compression. Rechecked all 18 images in Chrome at 390px and 1440px without loading failures, horizontal overflow or JavaScript errors. Updated full-set totals at DPR 2: 2,346,526 bytes mobile and 2,970,110 bytes desktop. The earlier totals below describe the initial optimization before this clarity adjustment.
+
 Converted all 18 local images referenced by index.html to responsive WebP assets in assets/webp/. Original sources are retained and no image content was generated or changed. Facebook's remote tracking pixel remains unchanged.
 
 - Encoder: bundled Sharp, WebP quality 85, effort 6, proportional resizing, no enlargement.
