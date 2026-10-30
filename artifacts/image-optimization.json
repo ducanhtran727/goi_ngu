@@ -1,0 +1,386 @@
+[
+  {
+    "original": "assets/hero-nano-carbon-v6.png",
+    "originalBytes": 2068343,
+    "variants": [
+      {
+        "src": "assets/webp/hero-nano-carbon-v6-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 47910
+      },
+      {
+        "src": "assets/webp/hero-nano-carbon-v6-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 101564
+      },
+      {
+        "src": "assets/webp/hero-nano-carbon-v6-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 179904
+      }
+    ]
+  },
+  {
+    "original": "assets/no-screen-led.png",
+    "originalBytes": 2408271,
+    "variants": [
+      {
+        "src": "assets/webp/no-screen-led-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 7752
+      },
+      {
+        "src": "assets/webp/no-screen-led-240.webp",
+        "width": 240,
+        "height": 240,
+        "bytes": 15732
+      }
+    ]
+  },
+  {
+    "original": "assets/use-four-situations-heater-v2.png",
+    "originalBytes": 2377291,
+    "variants": [
+      {
+        "src": "assets/webp/use-four-situations-heater-v2-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 49684
+      },
+      {
+        "src": "assets/webp/use-four-situations-heater-v2-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 111686
+      },
+      {
+        "src": "assets/webp/use-four-situations-heater-v2-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 203654
+      }
+    ]
+  },
+  {
+    "original": "xanh-luc.png",
+    "originalBytes": 2423077,
+    "variants": [
+      {
+        "src": "assets/webp/xanh-luc-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 45134
+      },
+      {
+        "src": "assets/webp/xanh-luc-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 107660
+      },
+      {
+        "src": "assets/webp/xanh-luc-900.webp",
+        "width": 900,
+        "height": 900,
+        "bytes": 125422
+      }
+    ]
+  },
+  {
+    "original": "xanh-lam.png",
+    "originalBytes": 2322533,
+    "variants": [
+      {
+        "src": "assets/webp/xanh-lam-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 50692
+      },
+      {
+        "src": "assets/webp/xanh-lam-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 111624
+      },
+      {
+        "src": "assets/webp/xanh-lam-900.webp",
+        "width": 900,
+        "height": 900,
+        "bytes": 129004
+      }
+    ]
+  },
+  {
+    "original": "mau-do.png",
+    "originalBytes": 2189373,
+    "variants": [
+      {
+        "src": "assets/webp/mau-do-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 45308
+      },
+      {
+        "src": "assets/webp/mau-do-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 92776
+      },
+      {
+        "src": "assets/webp/mau-do-900.webp",
+        "width": 900,
+        "height": 900,
+        "bytes": 109568
+      }
+    ]
+  },
+  {
+    "original": "assets/experience-temperature.png",
+    "originalBytes": 2205072,
+    "variants": [
+      {
+        "src": "assets/webp/experience-temperature-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 43134
+      },
+      {
+        "src": "assets/webp/experience-temperature-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 92454
+      },
+      {
+        "src": "assets/webp/experience-temperature-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 158096
+      }
+    ]
+  },
+  {
+    "original": "assets/experience-material.png",
+    "originalBytes": 2018479,
+    "variants": [
+      {
+        "src": "assets/webp/experience-material-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 41596
+      },
+      {
+        "src": "assets/webp/experience-material-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 86164
+      },
+      {
+        "src": "assets/webp/experience-material-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 150956
+      }
+    ]
+  },
+  {
+    "original": "assets/experience-pressure.png",
+    "originalBytes": 2339016,
+    "variants": [
+      {
+        "src": "assets/webp/experience-pressure-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 52560
+      },
+      {
+        "src": "assets/webp/experience-pressure-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 113632
+      },
+      {
+        "src": "assets/webp/experience-pressure-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 206842
+      }
+    ]
+  },
+  {
+    "original": "assets/experience-install.png",
+    "originalBytes": 1991497,
+    "variants": [
+      {
+        "src": "assets/webp/experience-install-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 28710
+      },
+      {
+        "src": "assets/webp/experience-install-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 63070
+      },
+      {
+        "src": "assets/webp/experience-install-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 116398
+      }
+    ]
+  },
+  {
+    "original": "assets/experience-design.png",
+    "originalBytes": 1807646,
+    "variants": [
+      {
+        "src": "assets/webp/experience-design-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 25322
+      },
+      {
+        "src": "assets/webp/experience-design-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 52380
+      },
+      {
+        "src": "assets/webp/experience-design-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 97598
+      }
+    ]
+  },
+  {
+    "original": "./nam-3.jpg",
+    "originalBytes": 79267,
+    "variants": [
+      {
+        "src": "assets/webp/nam-3-80.webp",
+        "width": 80,
+        "height": 120,
+        "bytes": 1398
+      },
+      {
+        "src": "assets/webp/nam-3-420.webp",
+        "width": 420,
+        "height": 630,
+        "bytes": 13144
+      }
+    ]
+  },
+  {
+    "original": "assets/demo-video-8-clean.png",
+    "originalBytes": 1757582,
+    "variants": [
+      {
+        "src": "assets/webp/demo-video-8-clean-420.webp",
+        "width": 420,
+        "height": 746,
+        "bytes": 37928
+      },
+      {
+        "src": "assets/webp/demo-video-8-clean-630.webp",
+        "width": 630,
+        "height": 1119,
+        "bytes": 63556
+      }
+    ]
+  },
+  {
+    "original": "./nam-2.jpg",
+    "originalBytes": 407293,
+    "variants": [
+      {
+        "src": "assets/webp/nam-2-80.webp",
+        "width": 80,
+        "height": 80,
+        "bytes": 2306
+      },
+      {
+        "src": "assets/webp/nam-2-420.webp",
+        "width": 420,
+        "height": 420,
+        "bytes": 37630
+      }
+    ]
+  },
+  {
+    "original": "assets/demo-video-16.png",
+    "originalBytes": 508708,
+    "variants": [
+      {
+        "src": "assets/webp/demo-video-16-420.webp",
+        "width": 420,
+        "height": 747,
+        "bytes": 22238
+      },
+      {
+        "src": "assets/webp/demo-video-16-576.webp",
+        "width": 576,
+        "height": 1024,
+        "bytes": 32100
+      }
+    ]
+  },
+  {
+    "original": "./nu-1.jpg",
+    "originalBytes": 262515,
+    "variants": [
+      {
+        "src": "assets/webp/nu-1-80.webp",
+        "width": 80,
+        "height": 107,
+        "bytes": 2088
+      },
+      {
+        "src": "assets/webp/nu-1-420.webp",
+        "width": 420,
+        "height": 560,
+        "bytes": 30728
+      }
+    ]
+  },
+  {
+    "original": "./nam-1.jpg",
+    "originalBytes": 29289,
+    "variants": [
+      {
+        "src": "assets/webp/nam-1-80.webp",
+        "width": 80,
+        "height": 80,
+        "bytes": 1294
+      },
+      {
+        "src": "assets/webp/nam-1-420.webp",
+        "width": 420,
+        "height": 420,
+        "bytes": 11552
+      }
+    ]
+  },
+  {
+    "original": "assets/gift-shower-hose.png",
+    "originalBytes": 2184871,
+    "variants": [
+      {
+        "src": "assets/webp/gift-shower-hose-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 45478
+      },
+      {
+        "src": "assets/webp/gift-shower-hose-720.webp",
+        "width": 720,
+        "height": 720,
+        "bytes": 90696
+      }
+    ]
+  }
+]

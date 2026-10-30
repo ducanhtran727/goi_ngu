@@ -1,0 +1,196 @@
+[
+  {
+    "viewport": 390,
+    "dpr": 2,
+    "bytes": 975252,
+    "images": [
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/hero-nano-carbon-v6-800.webp",
+        "width": 358,
+        "displayWidth": 358
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/no-screen-led-160.webp",
+        "width": 76,
+        "displayWidth": 76
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/use-four-situations-heater-v2-800.webp",
+        "width": 358,
+        "displayWidth": 358
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/xanh-luc-480.webp",
+        "width": 166,
+        "displayWidth": 166
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/xanh-lam-480.webp",
+        "width": 166,
+        "displayWidth": 166
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/mau-do-800.webp",
+        "width": 340,
+        "displayWidth": 340
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-temperature-800.webp",
+        "width": 358,
+        "displayWidth": 358
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-material-800.webp",
+        "width": 358,
+        "displayWidth": 358
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-pressure-800.webp",
+        "width": 358,
+        "displayWidth": 358
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-install-800.webp",
+        "width": 358,
+        "displayWidth": 358
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-design-800.webp",
+        "width": 358,
+        "displayWidth": 358
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/nam-3-80.webp",
+        "width": 40,
+        "displayWidth": 40
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/demo-video-8-clean-420.webp",
+        "width": 210,
+        "displayWidth": 210
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/nam-2-80.webp",
+        "width": 40,
+        "displayWidth": 40
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/demo-video-16-420.webp",
+        "width": 210,
+        "displayWidth": 210
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/nu-1-80.webp",
+        "width": 40,
+        "displayWidth": 40
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/nam-1-80.webp",
+        "width": 40,
+        "displayWidth": 40
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/gift-shower-hose-720.webp",
+        "width": 360,
+        "displayWidth": 0
+      }
+    ]
+  },
+  {
+    "viewport": 1440,
+    "dpr": 2,
+    "bytes": 1677176,
+    "images": [
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/hero-nano-carbon-v6-1254.webp",
+        "width": 660,
+        "displayWidth": 660
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/no-screen-led-160.webp",
+        "width": 76,
+        "displayWidth": 76
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/use-four-situations-heater-v2-1254.webp",
+        "width": 660,
+        "displayWidth": 660
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/xanh-luc-800.webp",
+        "width": 289,
+        "displayWidth": 288.65625
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/xanh-lam-800.webp",
+        "width": 289,
+        "displayWidth": 288.671875
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/mau-do-800.webp",
+        "width": 289,
+        "displayWidth": 288.65625
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-temperature-1254.webp",
+        "width": 536,
+        "displayWidth": 536
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-material-1254.webp",
+        "width": 536,
+        "displayWidth": 536
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-pressure-1254.webp",
+        "width": 536,
+        "displayWidth": 536
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-install-1254.webp",
+        "width": 536,
+        "displayWidth": 536
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/experience-design-1254.webp",
+        "width": 536,
+        "displayWidth": 536
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/nam-3-420.webp",
+        "width": 210,
+        "displayWidth": 210
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/demo-video-8-clean-420.webp",
+        "width": 210,
+        "displayWidth": 210
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/nam-2-420.webp",
+        "width": 210,
+        "displayWidth": 210
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/demo-video-16-420.webp",
+        "width": 210,
+        "displayWidth": 210
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/nu-1-420.webp",
+        "width": 210,
+        "displayWidth": 210
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/nam-1-420.webp",
+        "width": 210,
+        "displayWidth": 210
+      },
+      {
+        "src": "file:///E:/goi_ngu/assets/webp/gift-shower-hose-720.webp",
+        "width": 360,
+        "displayWidth": 360
+      }
+    ]
+  }
+]
